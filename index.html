@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="src/output.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+  <title>FAQ App</title>
+</head>
+
+<body class="container w-1/2 bg-white py-[100px] mx-auto">
+  <div class="flex gap-12 flex-col align-center justify-center ">
+
+    <h2 class="pb-4 text-xl text-center text-primary-darker">FAQ</h2>
+    <div class="flex gap-5 flex-col align-center justify-center">
+
+      <!-- вопрос -->
+      <div x-data=" {isOpen : false} " class="bg-soft-violet rounded-[20px] px-5 py-[25px]">
+        <div @click="isOpen = !isOpen" class="flex items-center justify-between cursor-pointer hover:text-primary-hover"
+          :class="{'font-bold' : isOpen}">
+          <span class="text-base md:text-base">Кто может участвовать в розыгрыше?</span>
+          <div>
+            <img class="mb-1 duration-300" :class="{'transform rotate-180' : isOpen}" src="icon-arrow-down.svg"
+              alt="missing">
+          </div>
+        </div>
+
+        <div x-show.transition.duration.300ms.origin.bottom="isOpen" x-cloak @click.away="isOpen = false"
+          class="pt-3 text-base">
+          <span class="text-base">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa
+          </span>
+        </div>
+      </div>
+      <!-- конец вопроса -->
+
+      <!-- вопрос -->
+      <div x-data=" {isOpen : false} " class="bg-soft-violet rounded-[20px] px-5 py-[25px]">
+        <div @click="isOpen = !isOpen" class="flex items-center justify-between cursor-pointer hover:text-primary-hover"
+          :class="{'font-bold' : isOpen}">
+          <span class="text-base md:text-base">Я не хочу проходить квиз, могу ли я участвовать в розыгрыше?</span>
+          <div>
+            <img class="mb-1 duration-300" :class="{'transform rotate-180' : isOpen}" src="icon-arrow-down.svg"
+              alt="missing">
+          </div>
+        </div>
+
+        <div x-show.transition.duration.300ms.origin.bottom="isOpen" x-cloak @click.away="isOpen = false"
+          class="pt-3 text-base">
+          <span class="text-base">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa
+          </span>
+        </div>
+      </div>
+      <!-- конец вопроса -->
+
+      <!-- вопрос -->
+      <div x-data=" {isOpen : false} " class="bg-soft-violet rounded-[20px] px-5 py-[25px]">
+        <div @click="isOpen = !isOpen" class="flex items-center justify-between cursor-pointer hover:text-primary-hover"
+          :class="{'font-bold' : isOpen}">
+          <span class="text-base md:text-base">До какого числа можно участвовать в розыгрыше?</span>
+          <div>
+            <img class="mb-1 duration-300" :class="{'transform rotate-180' : isOpen}" src="icon-arrow-down.svg"
+              alt="missing">
+          </div>
+        </div>
+
+        <div x-show.transition.duration.300ms.origin.bottom="isOpen" x-cloak @click.away="isOpen = false"
+          class="pt-3 text-base">
+          <span class="text-base">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa
+          </span>
+        </div>
+      </div>
+      <!-- конец вопроса -->
+
+      <!-- вопрос -->
+      <div x-data=" {isOpen : false} " class="bg-soft-violet rounded-[20px] px-5 py-[25px]">
+        <div @click="isOpen = !isOpen" class="flex items-center justify-between cursor-pointer hover:text-primary-hover"
+          :class="{'font-bold' : isOpen}">
+          <span class="text-base md:text-base">Какие призы разыгрываются?</span>
+          <div>
+            <img class="mb-1 duration-300" :class="{'transform rotate-180' : isOpen}" src="icon-arrow-down.svg"
+              alt="missing">
+          </div>
+        </div>
+
+        <div x-show.transition.duration.300ms.origin.bottom="isOpen" x-cloak @click.away="isOpen = false"
+          class="pt-3 text-base">
+          <span class="text-base">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa
+          </span>
+        </div>
+      </div>
+      <!-- конец вопроса -->
+
+      <!-- вопрос -->
+      <div x-data=" {isOpen : false} " class="bg-soft-violet rounded-[20px] px-5 py-[25px]">
+        <div @click="isOpen = !isOpen" class="flex items-center justify-between cursor-pointer hover:text-primary-hover"
+          :class="{'font-bold' : isOpen}">
+          <span class="text-base md:text-base">Можно ли зарегистрироваться несколько раз?</span>
+          <div>
+            <img class="mb-1 duration-300" :class="{'transform rotate-180' : isOpen}" src="icon-arrow-down.svg"
+              alt="missing">
+          </div>
+        </div>
+
+        <div x-show.transition.duration.300ms.origin.bottom="isOpen" x-cloak @click.away="isOpen = false"
+          class="pt-3 text-base">
+          <span class="text-base">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa
+          </span>
+        </div>
+      </div>
+      <!-- конец вопроса -->
+
+      <!-- вопрос -->
+      <div x-data=" {isOpen : false} " class="bg-soft-violet rounded-[20px] px-5 py-[25px]">
+        <div @click="isOpen = !isOpen" class="flex items-center justify-between cursor-pointer hover:text-primary-hover"
+          :class="{'font-bold' : isOpen}">
+          <span class="text-base md:text-base">Как получить призы?</span>
+          <div>
+            <img class="mb-1 duration-300" :class="{'transform rotate-180' : isOpen}" src="icon-arrow-down.svg"
+              alt="missing">
+          </div>
+        </div>
+
+        <div x-show.transition.duration.300ms.origin.bottom="isOpen" x-cloak @click.away="isOpen = false"
+          class="pt-3 text-base">
+          <span class="text-base">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa
+          </span>
+        </div>
+      </div>
+      <!-- конец вопроса -->
+
+      <!-- вопрос -->
+      <div x-data=" {isOpen : false} " class="bg-soft-violet rounded-[20px] px-5 py-[25px]">
+        <div @click="isOpen = !isOpen" class="flex items-center justify-between cursor-pointer hover:text-primary-hover"
+          :class="{'font-bold' : isOpen}">
+          <span class="text-base md:text-base">Как долго работает сертификат на бонусы?</span>
+          <div>
+            <img class="mb-1 duration-300" :class="{'transform rotate-180' : isOpen}" src="icon-arrow-down.svg"
+              alt="missing">
+          </div>
+        </div>
+
+        <div x-show.transition.duration.300ms.origin.bottom="isOpen" x-cloak @click.away="isOpen = false"
+          class="pt-3 text-base">
+          <span class="text-base">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa
+          </span>
+        </div>
+      </div>
+      <!-- конец вопроса -->
+
+      <!-- вопрос -->
+      <div x-data=" {isOpen : false} " class="bg-soft-violet rounded-[20px] px-5 py-[25px]">
+        <div @click="isOpen = !isOpen" class="flex items-center justify-between cursor-pointer hover:text-primary-hover"
+          :class="{'font-bold' : isOpen}">
+          <span class="text-base md:text-base">Как использовать сертификат при оплате заявки? </span>
+          <div>
+            <img class="mb-1 duration-300" :class="{'transform rotate-180' : isOpen}" src="icon-arrow-down.svg"
+              alt="missing">
+          </div>
+        </div>
+
+        <div x-show.transition.duration.300ms.origin.bottom="isOpen" x-cloak @click.away="isOpen = false"
+          class="pt-3 text-base">
+          <span class="text-base">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa
+          </span>
+        </div>
+      </div>
+      <!-- конец вопроса -->
+    </div>
+
+  </div>
+</body>
+
+</html>
