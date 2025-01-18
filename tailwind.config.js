@@ -27,7 +27,7 @@ module.exports = {
                 lineHeight: '20px',
                 fontWeight: '400',
             }],
-        }
+        },
     },
     variants: {
         extend: {},

@@ -26,4 +26,19 @@ body {
   font-weight: 400;
 }
 
+@media (width >=1800px) {
+  body {
+    padding-left: 400px !important;
+    padding-right: 400px !important;
+  }
+}
+
+@media (width >=1980px) {
+  body {
+    padding-left: 500px !important;
+    padding-right: 500px !important;
+  }
+}
+
+
 @import "tailwindcss/utilities";

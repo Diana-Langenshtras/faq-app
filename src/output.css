@@ -7,8 +7,7 @@
 @font-face {
   font-family: 'Aeroport';
 
-  src: url('/src/fonts/Aeroport-regular-trial.otf')
-  format('opentype');
+  src: url('/src/fonts/Aeroport-regular-trial.otf') format('opentype');
 
   font-weight: 400;
 }
@@ -16,8 +15,7 @@
 @font-face {
   font-family: 'Aeroport';
 
-  src: url('/src/fonts/Aeroport-medium-trial.otf')
-  format('opentype');
+  src: url('/src/fonts/Aeroport-medium-trial.otf') format('opentype');
 
   font-weight: 500;
 }
@@ -578,88 +576,31 @@ video {
   display: none;
 }
 
-.container {
-  width: 100%;
-}
-
-@media (min-width: 640px) {
-  .container {
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px) {
-  .container {
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px) {
-  .container {
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px) {
-  .container {
-    max-width: 1536px;
-  }
-}
-
 body {
   font-family: "Aeroport", sans-serif;
   font-weight: 400;
 }
 
-[x-cloak] {
-  display: none !important;
+@media (width >=1800px) {
+  body {
+    padding-left: 400px !important;
+    padding-right: 400px !important;
+  }
 }
 
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.mb-1 {
-  margin-bottom: 0.25rem;
+@media (width >=1980px) {
+  body {
+    padding-left: 500px !important;
+    padding-right: 500px !important;
+  }
 }
 
 .flex {
   display: flex;
 }
 
-.w-2\/4 {
-  width: 50%;
-}
-
-.w-2\/5 {
-  width: 40%;
-}
-
-.w-2\/6 {
-  width: 33.333333%;
-}
-
-.w-1\/2 {
-  width: 50%;
-}
-
-.w-5\/12 {
-  width: 41.666667%;
-}
-
-.basis-1\/3 {
-  flex-basis: 33.333333%;
-}
-
-.basis-1\/2 {
-  flex-basis: 50%;
+.min-w-\[18px\] {
+  min-width: 18px;
 }
 
 .rotate-180 {
@@ -695,6 +636,10 @@ body {
   gap: 3rem;
 }
 
+.gap-2\.5 {
+  gap: 0.625rem;
+}
+
 .gap-5 {
   gap: 1.25rem;
 }
@@ -715,6 +660,11 @@ body {
 .px-5 {
   padding-left: 1.25rem;
   padding-right: 1.25rem;
+}
+
+.px-\[10px\] {
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .py-\[100px\] {
@@ -776,10 +726,43 @@ body {
   color: var(--primary-hover);
 }
 
+@media (min-width: 640px) {
+  .sm\:px-\[20px\] {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
 @media (min-width: 768px) {
+  .md\:px-\[100px\] {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+
   .md\:text-base {
     font-size: 20px;
     line-height: 20px;
     font-weight: 400;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:px-\[150px\] {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:px-\[200px\] {
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .\32xl\:px-\[350px\] {
+    padding-left: 350px;
+    padding-right: 350px;
   }
 }
